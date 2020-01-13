@@ -11,10 +11,10 @@ Object.keys(localizedBundles).forEach((bundleKey) => {
 module.exports = function(env, args) {
   const skipReports = args.skipReports !== 'false';
   const locale = args.locale || null;
-  const host = 'http://localhost';
+  const host = 'http://34.82.142.97';
   const defineParams = {
-    API_ENDPOINT: args.endpoint || `${host}:3000`,
-    CORE_URL: args.coreUrl || `${host}:3333/dist/core2.js`,
+    API_ENDPOINT: args.endpoint || `${host}:3434`,
+    CORE_URL: args.coreUrl || `${host}/dist/core2.js`,
     GUEST_SECRET: args.guestSecret || 'guest',
     PUSH_URL: args.pushUrl || `${host}:8080/push.html`,
     TWITTER_URL: args.twitterUrl || `${host}:8080/twitter-start.html`,
